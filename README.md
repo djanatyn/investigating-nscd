@@ -4,6 +4,8 @@ Investigating `glibc` translation of `getaddrinfo` syscalls with `nscd`.
 
 > The answer is that local processes don’t know to connect to `/var/run/nscd/socket`. Or rather, some do, and some don’t. The processes that do know about `/var/run/nscd/socket` are those linked against `glibc` and using `getaddrinfo` from that library.
 
+- [jameshfisher.com "Don’t use nscd"](https://jameshfisher.com/2018/02/05/dont-use-nscd/)
+
 # usage
 
 ## watching `nscd` daemon syscalls
